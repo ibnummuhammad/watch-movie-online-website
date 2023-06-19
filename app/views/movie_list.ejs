@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="/css/movie_list.css" rel="stylesheet" type="text/css" />
+  </head>
+  <div id="textbox">
+    <h1 class="alignleft"><a href="/">home</a></h1>
+    <h1 class="aligncenter"><%= title %></h1>
+  </div>
+  <div style="clear: both"></div>
+  <body>
+    <center>
+      <ul class="list" id="chapter"></ul>
+    </center>
+    <script>
+      var files = <%- JSON.stringify(files) %>;
+    </script>
+    <script>
+      var title = <%- JSON.stringify(title) %>;
+    </script>
+    <script>
+      var video_type = <%- JSON.stringify(video_type) %>;
+    </script>
+    <script src="/js/movie_list.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+package.json
+package-lock.json
+
+assets/
+node_modules/
+
+app/public/movies
+app/public/pictures/

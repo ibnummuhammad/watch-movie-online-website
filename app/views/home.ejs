@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link href="/css/home.css" rel="stylesheet" type="text/css" />
+  </head>
+  <div id="textbox">
+    <h1 class="alignleft"></h1>
+    <h1 class="aligncenter">home</h1>
+  </div>
+  <div style="clear: both"></div>
+  <body>
+    <center>
+      <ul class="titleList" id="titleList"></ul>
+    </center>
+    <script>
+      var files = <%- JSON.stringify(files) %>;
+    </script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

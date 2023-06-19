@@ -1,0 +1,38 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fff;
+    --bg: #000;
+  }
+}
+.alignleft {
+  float: left;
+  width: 33.33333%;
+  text-align: left;
+}
+.aligncenter {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
+.alignright {
+  float: left;
+  width: 33.33333%;
+  text-align: right;
+}
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#titleDetail {
+  font-size: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom:45px;
+}

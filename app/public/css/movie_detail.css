@@ -1,0 +1,31 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fff;
+    --bg: #000;
+  }
+}
+.aligncenter {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
+.alignleft {
+  float: left;
+  width: 33.33333%;
+  text-align: left;
+}
+.alignright {
+  float: left;
+  width: 33.33333%;
+  text-align: right;
+}
+.c-video {
+  width: 100%;
+  max-width: 1000px;
+}
