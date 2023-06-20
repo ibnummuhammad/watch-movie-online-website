@@ -17,7 +17,8 @@ app.get("/", (req, res) => {
   res.render("home", detail);
 });
 
-var moviesMp4 = "(spongebob_squarepants_season_1|yu_yu_hakusho)";
+var moviesMp4 =
+  "(dragon_ball_super_broly|spongebob_squarepants_season_1|yu_yu_hakusho)";
 
 // movie_list
 app.get("/:title" + moviesMp4, (req, res) => {
