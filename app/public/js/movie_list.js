@@ -1,5 +1,5 @@
 for (let i in files) {
-  var chapter = files[i].replace("." + video_type, "");
+  var chapter = files[i];
   var elmt_li = document.createElement("li");
   elmt_li.id = "titleDetail";
   var idChapter = document.getElementById("chapter");
