@@ -8,6 +8,7 @@ for (let i in files) {
   elmt_a.href = title;
   elmt_li.appendChild(elmt_a);
   var elmtImg = document.createElement("img");
+  elmtImg.alt = title;
   elmtImg.src = "/pictures/" + title + ".jpg";
   elmtImg.width = "200";
   elmt_a.appendChild(elmtImg);
