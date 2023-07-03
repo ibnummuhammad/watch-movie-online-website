@@ -14,9 +14,4 @@ for (let i in files) {
   elmtImg.src = "/pictures/" + title + ".jpg";
   elmtImg.width = "200";
   elmtFig.appendChild(elmtImg);
-  var elmtFigcaption = document.createElement("figcaption");
-  elmtFigcaption.id = "figcaptionId";
-  elmtFig.appendChild(elmtFigcaption);
-  var textFigcaption = document.createTextNode(title);
-  elmtFigcaption.appendChild(textFigcaption);
 }
