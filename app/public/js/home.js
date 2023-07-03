@@ -1,4 +1,4 @@
-for (let i in files) {
+for (let i = 0; i < files.length; i++) {
   var title = files[i];
   var elmt_li = document.createElement("li");
   elmt_li.id = "titleDetail";
