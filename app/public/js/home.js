@@ -1,7 +1,7 @@
 for (let i = 0; i < files.length; i++) {
   var title = files[i];
   var elmt_li = document.createElement("li");
-  elmt_li.id = "titleDetail";
+  elmt_li.className = "movieList";
   var idTitle = document.getElementById("titleList");
   idTitle.appendChild(elmt_li);
   var elmt_a = document.createElement("a");
@@ -12,6 +12,7 @@ for (let i = 0; i < files.length; i++) {
   var elmtImg = document.createElement("img");
   elmtImg.alt = title;
   elmtImg.src = "/pictures/" + title + ".jpg";
+  elmtImg.height = "300";
   elmtImg.width = "200";
   elmtFig.appendChild(elmtImg);
 }

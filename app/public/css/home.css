@@ -24,6 +24,11 @@ body {
   width: 33.33333%;
   text-align: right;
 }
+.movieList {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
 .titleList {
   list-style-type: none;
   margin: 0;
