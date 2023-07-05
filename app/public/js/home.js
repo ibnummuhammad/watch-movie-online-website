@@ -12,7 +12,7 @@ for (let i = 0; i < files.length; i++) {
   var elmtImg = document.createElement("img");
   elmtImg.alt = title;
   elmtImg.src = "/pictures/" + title + ".jpg";
-  elmtImg.height = "300";
-  elmtImg.width = "200";
+  elmtImg.height = "600";
+  elmtImg.width = "400";
   elmtFig.appendChild(elmtImg);
 }
