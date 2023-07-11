@@ -2,7 +2,7 @@ const express = require("express");
 var fs = require("fs");
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 80;
 const zeroPad = (num, places) => String(num).padStart(places, "0");
 
 app.set("view engine", "ejs");
