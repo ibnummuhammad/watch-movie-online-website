@@ -6,3 +6,5 @@ node_modules/
 
 app/public/movies
 app/public/pictures/
+
+.DS_Store
