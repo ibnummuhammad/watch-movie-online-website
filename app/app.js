@@ -7,18 +7,18 @@ const zeroPad = (num, places) => String(num).padStart(places, "0");
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-app.use(express.static("/Volumes/New Volume/"));
+app.use(express.static("/Volumes/iben/"));
 
 // Home
 app.get("/", (req, res) => {
-  var files = fs.readdirSync("/Volumes/New Volume/movies/");
+  var files = fs.readdirSync("/Volumes/iben/movies/");
   var detail = { files: files };
   res.render("home", detail);
 });
 
 // movie_list
 app.get("/:title", (req, res) => {
-  var files = fs.readdirSync("/Volumes/New Volume/movies/" + req.params.title);
+  var files = fs.readdirSync("/Volumes/iben/movies/" + req.params.title);
   var detail = {
     files: files,
     title: req.params.title,
