@@ -5,13 +5,13 @@
     <link href="/css/movie_detail.css" rel="stylesheet" type="text/css" />
   </head>
   <div id="textbox">
-    <h1 class="alignleft"><a href="/">Rumah Daud</a></h1>
-    <h1 class="aligncenter"><a href="/<%= title %>"><%= title %></a></h1>
+    <h1 class="alignleft"><a href="/<%= title %>">back</a></h1>
+    <h1 class="aligncenter"><a href="/">Rumah Daud</a></h1>
   </div>
   <div style="clear: both"></div>
   <div id="textbox">
-    <h1 class="alignleft"><a href="/<%= title %>">back</a></h1>
-    <h1 class="aligncenter"><%= eps %></h1>
+    <h1 class="alignleft"></h1>
+    <h1 class="aligncenter"><%= title %></h1>
   </div>
   <div style="clear: both"></div>
   <body>
@@ -20,15 +20,5 @@
         <source src="/movies/<%= title %>/<%= eps %>" type="video/mp4" />
       </video>
     </center>
-    <div id="textbox">
-      <h1 class="alignleft">
-        <a href="/<%= title %>/<%= epsPrev %>">prev</a>
-      </h1>
-      <h1 class="aligncenter"></h1>
-      <h1 class="alignright">
-        <a href="/<%= title %>/<%= epsNext %>">next</a>
-      </h1>
-    </div>
-    <div style="clear: both"></div>
   </body>
 </html>
