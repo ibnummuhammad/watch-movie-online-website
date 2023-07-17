@@ -23,7 +23,6 @@ function titleCase(str) {
 // Home
 app.get("/", (req, res) => {
   var files = fs.readdirSync("/Volumes/iben/movies/");
-  files.reverse();
   var detail = { files: files };
   res.render("home", detail);
 });

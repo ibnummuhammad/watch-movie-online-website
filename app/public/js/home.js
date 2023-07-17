@@ -11,7 +11,7 @@ for (let i = 0; i < files.length; i++) {
   elmt_a.appendChild(elmtFig);
   var elmtImg = document.createElement("img");
   elmtImg.alt = title;
-  elmtImg.src = "/pictures/" + title + ".jpg";
+  elmtImg.src = "/pictures/" + title.replaceAll(".mp4", "") + ".jpg";
   elmtImg.height = "600";
   elmtImg.width = "400";
   elmtFig.appendChild(elmtImg);
