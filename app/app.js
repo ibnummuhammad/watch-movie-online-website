@@ -28,18 +28,15 @@ app.get("/", (req, res) => {
   res.render("home", detail);
 });
 
-// movie_list
+// movie_detail
 app.get("/:title", (req, res) => {
-  var files = fs.readdirSync("/Volumes/iben/movies/" + req.params.title);
   var detail = {
-    files: files,
     title: req.params.title,
-    titleCap: titleCase(req.params.title.replaceAll("_", " ")),
+    titleCap: titleCase(req.params.title.replaceAll("_", " ").replaceAll(".mp4", "")),
   };
-  res.render("movie_list", detail);
+  res.render("movie_detail", detail);
 });
 
-// movie_detail
 app.get("/:title/:eps", (req, res) => {
   var detail = {
     eps: req.params.eps,
