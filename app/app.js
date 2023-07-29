@@ -7,7 +7,7 @@ const zeroPad = (num, places) => String(num).padStart(places, "0");
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-app.use(express.static("/Volumes/iben/"));
+app.use(express.static("/Volumes/iben500gb/"));
 
 function titleCase(str) {
   var splitStr = str.toLowerCase().split(" ");
@@ -22,7 +22,7 @@ function titleCase(str) {
 
 // Home
 app.get("/", (req, res) => {
-  var files = fs.readdirSync("/Volumes/iben/movies/");
+  var files = fs.readdirSync("/Volumes/iben500gb/movies/");
   var detail = { files: files };
   res.render("home", detail);
 });
