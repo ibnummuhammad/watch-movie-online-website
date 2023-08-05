@@ -22,6 +22,7 @@ function titleCase(str) {
 
 // Home
 app.get("/", (req, res) => {
+  console.log("Open rumahdaud.com");
   var files = fs.readdirSync("/Volumes/ibn500gb/movies/");
   var detail = { files: files };
   res.render("home", detail);
@@ -29,6 +30,7 @@ app.get("/", (req, res) => {
 
 // movie_detail
 app.get("/:title", (req, res) => {
+  console.log("Watching: " + req.params.title);
   var detail = {
     title: req.params.title,
     titleCap: titleCase(req.params.title.replaceAll("_", " ").replaceAll(".mp4", "")),
